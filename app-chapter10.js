@@ -71,32 +71,39 @@ function Question7k() {
     var A = ["cake", "apple pie", "cookie", "chips", "patties"]
     var order = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?")
 
-    if (order = A) {
-        alert(order + " " + "is <b>available</b>")
+    for (var i = 0; i < A.length; i++) {
+        if (order === A[i]) {
+            alert(order + " " + "is available")
+        } else {
+            alert("We are sorry. Pastry is not available in our bakery")
+        }
+        break
     }
 }
-
-// Problem
 
 // Question 8
 
 function Question8k() {
     var A = [24, 53, 78, 91, 12]
     document.write("Array items: " + A + "<br>")
-    A.sort((a, b) => a - b)
-    var max_A = A.slice(5, 0)
+    var max_A = Math.max(...A)
     document.write(max_A)
 }
-// Problem
+
+// Question 9
+
+function Question9k() {
+    var A = [24, 53, 78, 91, 12]
+    document.write("Array items: " + A + "<br>")
+    var min_A = Math.min(...A)
+    document.write(min_A)
+}
 
 // Question 10
 
 function Question10k() {
-    var limit = 100
-    var multiply
-    for (i = 1; multiply = 100; i++) {
-        multiply=5*i
-        document.write(multiply)
+    for (var i = 1; i <= 20; i++) {
+        multiply = 5 * i
+        document.write(multiply+",")
     }
-// Problem
 }

@@ -10,9 +10,13 @@ function Question1d() {
 
 // Question 2
 
-// for (var i = 0; i >= 0; i++) {
-//     alert("You have visited this site " + i + " times.")
-// }
+function Question2d (){
+    for (var i = 0; i >= 0; i++) {
+        alert("You have visited this site " + i + " times.")
+        break
+    }
+}
+
 
 // Question 3
 
